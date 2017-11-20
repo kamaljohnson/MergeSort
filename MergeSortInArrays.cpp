@@ -71,11 +71,6 @@ int* mergeSort(int* array, int size)		//devides the array into two and gets the 
 	array1 = array;
 	array2 = &array[size1];
 
-	std::cout << "array1 : ";
-	display(array1, size1);
-	std::cout << "array2 : ";
-	display(array2, size2);
-
 	if (size1 != 1)
 	{
 		array1 = mergeSort(array1, size1);
